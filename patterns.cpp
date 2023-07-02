@@ -4,6 +4,7 @@ using namespace std;
 int main(){
     int rowCount,colCount;
     cin>>rowCount;
+
     
     //half pyramid
     //    for(int i=0;i<rowCount;i++){
