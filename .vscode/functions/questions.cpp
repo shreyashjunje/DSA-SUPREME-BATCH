@@ -1,0 +1,139 @@
+#include<iostream>
+using namespace std;
+
+void printnum(int n){
+    for(int i=1;i<=n;i++){
+        cout<<i<<" ";
+    }
+}
+
+int addtwonum(int a,int b){
+    int c=a+b;
+    return c;
+}
+
+int addthreenum(int a,int b,int c){
+    int d=a+b+c;
+    return d;
+} 
+
+int maxnum(int a,int b,int c){
+    if(a>=b && a>=c){
+        return a;
+    }
+    else if(b>=a && b>=c){
+        return b;
+    }
+    else{
+        return c;
+    }
+}
+
+int minnum(int a,int b,int c){
+    if(a<=b && a<=c){
+        return a;
+    }
+    else if(b<=a && b<=c){
+        return b;
+    }
+    else {
+        return c;
+    }
+}
+
+float areaofcircle(float r){
+    float a=3.14*r*r;
+    return a;
+}
+
+void evenorodd(int n){
+    if(n%2==0){
+        cout<<"even";
+    }else{
+        cout<<"odd";
+    }
+}
+
+ int factorial( int n){
+     int count=1;
+    for(int i=1;i<=n;i++){
+        count=count*i;
+    }
+    return count;
+}
+
+bool primenum(int n){
+    for(int i=2;i<=n-1;i++){
+        if(n%i==0){
+           return true;
+        }else{
+            return false;
+        }
+       
+    }
+    
+  
+}
+
+int main(){
+    int n,a,b,c,r;
+    cout<<"enter the value of n : ";
+    cin>>n;
+    // cout<<"enter the value of a: ";
+    // cin>>a;
+    // cout<<"enter the value of b: ";
+    // cin>>b;
+    // cout<<"enter the value of c: ";
+    // cin>>c;
+//    cout<<"enter the radius of circle: ";
+//    cin>>r;
+
+    //print numbers from 1 to n
+    // cout<<"printing number sfrom 1 to n: ";
+    // printnum(n);
+
+    //addition of two nnumbers
+    // int additionoftwo=addtwonum(a,b);
+    // cout<<"addition of two numbers is : "<<additionoftwo;
+    // cout<<endl;
+
+    // //addition of three numbers
+    // int additionofthree=addthreenum(a,b,c);
+    // cout<<"addition of three numbers is : "<<additionofthree;
+    // cout<<endl;
+
+    // //maximum of three num
+    // int maxi=maxnum(a,b,c);
+    // cout<<"maximum number is: "<<maxi;
+    // cout<<endl;
+
+    // //minimum of three nums
+    // int mini=minnum(a,b,c);
+    // cout<<"minimum number is: "<<mini;
+    // cout<<endl;
+
+    //area of circle
+    // float area=areaofcircle(r);
+    // cout<<"area of the circle is: "<<area;
+    // cout<<endl;
+
+    //find number is even or odd
+    
+    cout<<"the given number is ";
+    evenorodd(n);
+    cout<<endl;
+
+    //factorial of numbers
+    int facto=factorial(n);
+    cout<<"factorial of "<<n<<" is "<<facto;
+    cout<<endl;
+
+    //find prime num or not
+    cout<<"the given number is ";
+    if(primenum(n)==true){
+        cout<<" not a prime number";
+    }else{
+        cout<<"a prime number";
+    }
+    cout<<endl;
+}
