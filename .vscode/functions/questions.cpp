@@ -69,12 +69,51 @@ bool primenum(int n){
         }else{
             return false;
         }
-       
     }
-    
-  
 }
 
+float kmtomiles(int n){
+    float convert=n*0.621371;
+    return convert;
+}
+
+float celciustofarenheit(int n){
+    float convert=(n*1.8)+32;
+    return convert;
+}
+
+int  sumupton(int n){
+    int count=0;
+    for(int i=0;i<=n;i++){
+        count=count+i;
+
+    }
+    return count;
+}
+
+int sumofevennum(int n){
+    int count=0;
+    for(int i=0;i<=n;i=i+2){
+        count=count+i;
+    }
+    return count;
+}
+
+int reverseint(int n){
+    int ans=0;
+    int remainder=0;
+    while(n>0){
+        remainder=n%10;
+        ans=ans*10+remainder;
+        n=n/10;
+    }
+    return ans;
+}
+
+int printprimenum(int n){
+  
+    
+}
 int main(){
     int n,a,b,c,r;
     cout<<"enter the value of n : ";
@@ -136,4 +175,47 @@ int main(){
         cout<<"a prime number";
     }
     cout<<endl;
-}
+
+    //convert distance in km to miles
+    float distance=kmtomiles(n);
+    cout<<"the distance "<<n<<" km in miles is "<<distance;
+    cout<<endl;
+
+    //convert celcius to fahrenheit
+    float temperature=celciustofarenheit(n);
+    cout<<"temperature "<<n<<" celcius in farenheit is "<<temperature;
+    cout<<endl;
+
+    //couning 1 to n
+    int count=sumupton(n);
+    cout<<"total sum from 1 to n is "<<count;
+    cout<<endl;
+
+    //sum of even num  upto n
+    int evencount=sumofevennum(n);
+    cout<<"sum of even numbers upto n is: "<<evencount;
+    cout<<endl;
+
+    //reverse aninteger
+    int reverse=reverseint(n);
+    cout<<"reverse integer is "<<reverse;
+    cout<<endl;
+    
+    //palindrome or not
+    if(reverse==n){
+        cout<<"it is a palindrome";
+    }else{
+        cout<<"it is not a palindrome";
+    }
+    cout<<endl;
+    //printing prime num upto n
+    cout<<"printing prime numbers from 1 to "<<n;
+    for(int i=1;i<=n;i++){
+        int d=primenum(n);
+        if(d==false){
+            cout<<n;
+        }
+    }
+    
+
+    }
