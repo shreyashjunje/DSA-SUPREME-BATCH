@@ -3,6 +3,7 @@
 using namespace std;
 
 int firstoccurrence(vector<int>arr,int target){
+    
     int start=0;
     int end=arr.size()-1;
     int ans=-1;
