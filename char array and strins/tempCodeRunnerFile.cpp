@@ -1,2 +1,1 @@
-
-    // getline(cin,str);
+ i++;
