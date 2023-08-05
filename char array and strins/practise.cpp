@@ -54,7 +54,7 @@ char replacespace(char ch[100]){
 
 //palindrome
 bool palindrome(char ch[100]){
-    
+
     int i=0;
     int j=strlen(ch)-1;
     while(ch[i]<=ch[j]){
@@ -63,12 +63,26 @@ bool palindrome(char ch[100]){
             return true;
 
         }
-            
+         i++;
         
-        i++;
-         return false;
     }
-   
+    return false;
+}
+
+//convert uppercase into lower case
+char converttolower(char ch[100]){
+    for(int i=0;i<strlen(ch);i++){
+        ch[i]=ch[i]+'a'-'A';
+    }
+    cout<<ch;
+}
+
+//convert lower case into uppercase
+char converttoupper(char ch[100]){
+    for(int i=0;i<strlen(ch);i++){
+        ch[i]=ch[i]-'a'+'A';
+    }
+    cout<<ch;
 }
 
 int main(){
@@ -103,4 +117,14 @@ int main(){
         cout<<"it is not palimdrome"<<endl;
     }
 
+    //convert uppercase to lower case
+    cout<<"converting string into lowercse: ";
+    converttolower(ch);
+    cout<<endl;
+
+    //convert lower to upper
+     cout<<"converting string into uppercase: ";
+     converttoupper(ch);
+  
+     cout<<endl;
 }
