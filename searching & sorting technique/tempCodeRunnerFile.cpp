@@ -1,2 +1,6 @@
-//last occurrence of the target
-    cout<<"last occuurrence of the target is at index "<<lastoccurrence(brr,target)<<endl;
+int findfirstocc=firstoccurrence(arr,target);
+    cout<<"index of first occurrence is "<<findfirstocc;
+
+    cout<<endl;
+    int findlastocc=lastoccurrence(arr,target);
+    cout<<"index of last occurrence is "<<findlastocc;
