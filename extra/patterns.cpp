@@ -50,7 +50,7 @@ int main(){
 
     //full pyramid
 
-    for(int i=0;i<rowCount;i++){
+    for(int i=0;i<1;i++){
         
        for(int j=0;j<rowCount-i-1;j++){
             cout<<" ";
