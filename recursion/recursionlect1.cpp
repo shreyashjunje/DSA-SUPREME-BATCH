@@ -56,12 +56,12 @@ int main(){
    
 //    int arr[5]={10,20,30,40,50};
 //    int size=5;
-//     int i=0;
+    int i=0;
 //    printarr(arr,size,i);
 
-//    int maxi=INT_MIN;
-//    findmax(arr,i,size,maxi);
-//    cout<<maxi;
+   int maxi=INT_MIN;
+   findmax(arr,i,size,maxi);
+   cout<<maxi;
    
 string str="lovebabbar";
 int i=0;

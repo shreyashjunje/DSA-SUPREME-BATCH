@@ -46,38 +46,38 @@ int main(){
     int start=0;
     int end=size-1;
 
-    // int offset=-1;
+    int offset=-1;
    
 
 
-    // for(int i=0;i<size;i++){
-    //     if(frr[i]>=maxNum){
-    //       maxNum=frr[i];
-    //     }
-    // }
-    // for(int i=0;i<size;i++){
-    //     if(frr[i]<=minNum){
-    //       minNum=frr[i];
-    //     }
-    // }
-    // cout<<"maximum no. in an array is : ";
-    // cout<<maxNum;
-    // cout<<endl;
-    // cout<<"minimum no. in an array is : ";
-    // cout<<minNum;
+    for(int i=0;i<size;i++){
+        if(frr[i]>=maxNum){
+          maxNum=frr[i];
+        }
+    }
+    for(int i=0;i<size;i++){
+        if(frr[i]<=minNum){
+          minNum=frr[i];
+        }
+    }
+    cout<<"maximum no. in an array is : ";
+    cout<<maxNum;
+    cout<<endl;
+    cout<<"minimum no. in an array is : ";
+    cout<<minNum;
 
-    //printing extreme of array
-//    while(start<=end){
-//     if(start==end){
-//         cout<<frr[start]<<" ";
-//         }
-//         else{
-//             cout<<frr[start]<<" ";
-//             cout<<frr[end]<<" ";
-//         }
-//     start++;
-//     end--;
-//    }
+    printing extreme of array
+   while(start<=end){
+    if(start==end){
+        cout<<frr[start]<<" ";
+        }
+        else{
+            cout<<frr[start]<<" ";
+            cout<<frr[end]<<" ";
+        }
+    start++;
+    end--;
+   }
 
     //printing reverse of array
     while(start<=end){
