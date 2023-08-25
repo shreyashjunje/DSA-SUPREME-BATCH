@@ -109,6 +109,17 @@ void sort012(vector<int>crr,vector<int>drr){
     }
  }
 
+ void rotatecyclically(vector<int>brr){
+    for(int i=0;i<brr.size();i++){
+
+
+        brr[i]=brr[i+1];
+    }
+    for(int i=0;i<brr.size();i++){
+        cout<<brr[i]<<" ";
+    }
+ }
+
 
 
 int main(){
@@ -157,8 +168,9 @@ int main(){
     // cout<<"printing union of two sorted arrays: ";
     // printunion(brr,err,drr);
 
-    cout<<"printing interaction of two arrays: ";
-    printinteraction(brr,err);
+    // cout<<"printing interaction of two arrays: ";
+    // printinteraction(brr,err);
     
+    rotatecyclically(brr);
 
 }
