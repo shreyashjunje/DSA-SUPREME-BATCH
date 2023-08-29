@@ -118,6 +118,7 @@ void sort012(vector<int>crr,vector<int>drr){
     for(int i=0;i<brr.size();i++){
         cout<<brr[i]<<" ";
     }
+    
  }
 
 
