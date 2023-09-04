@@ -8,6 +8,7 @@ int smallestevenmultiple(int n){
     return 2*n;
 
 }
+
 int main(){
     int n;
     cin>>n;
