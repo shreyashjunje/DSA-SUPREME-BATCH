@@ -40,7 +40,9 @@ void printnegarray(vector<int>brr,int s,int i,int e){
     if(i>e){
         return;
     }
+    
     if(brr[i]<0){
+
         swap(brr[i],brr[e]);
         e--;
     }
