@@ -2,31 +2,7 @@
 
 using namespace std;
 
-void reversearr(vector<int>brr){
-    int s=0;
-    int e=brr.size()-1;
-    int i=0;
-    while(i!=e){
-        swap(brr[s],brr[e]);
-        s++;
-        e--;
-    }
-    for(int i=0;i<brr.size();i++){
-        cout<<brr[i]<<" ";
-    }
-}
 
-int printmax(vector<int>brr){
-   int maxi=INT_MIN;
-    for(int i=0;i<brr.size();i++){
-        if(brr[i]>=maxi){
-            maxi=brr[i];
-        }
-    }
-
-    return maxi;
-    
-}
 void printkthsmallest(vector<int>brr,int k){
     sort(begin(brr),end(brr));
     cout<<"kth smallest element in an array is "<<brr[k-1];
