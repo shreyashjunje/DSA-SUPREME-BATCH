@@ -16,6 +16,7 @@ void reversearr(vector<int>brr){
         swap(brr[s],brr[e]);
         s++;
         e--;
+        
     }
     for(int i=0;i<brr.size();i++){
         cout<<brr[i]<<" ";
