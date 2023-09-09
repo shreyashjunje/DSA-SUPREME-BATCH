@@ -16,7 +16,7 @@ void reversearr(vector<int>brr){
         swap(brr[s],brr[e]);
         s++;
         e--;
-        
+
     }
     for(int i=0;i<brr.size();i++){
         cout<<brr[i]<<" ";
@@ -25,6 +25,7 @@ void reversearr(vector<int>brr){
 
 int printmax(vector<int>brr){
    int maxi=INT_MIN;
+   
     for(int i=0;i<brr.size();i++){
         if(brr[i]>=maxi){
             maxi=brr[i];
