@@ -25,7 +25,7 @@ void reversearr(vector<int>brr){
 
 int printmax(vector<int>brr){
    int maxi=INT_MIN;
-   
+
     for(int i=0;i<brr.size();i++){
         if(brr[i]>=maxi){
             maxi=brr[i];
@@ -35,6 +35,26 @@ int printmax(vector<int>brr){
     return maxi;
     
 }
+t charlength(char name[]){
+    int count=0;
+    int i=0;
+    while(name[i]!='\0'){
+        count++;
+        i++;
+    }
+    
+    return count;
+}
+
+void reversestr(char name[100]){
+   int i=0;
+   int n=charlength(name);
+   int j=n-1;
+    while(i<=j){
+        swap(name[i],name[j]);
+        i++;
+        j--;
+    }
 int main(){
     int n;
     cin>>n;
