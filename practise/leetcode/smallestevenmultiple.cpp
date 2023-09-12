@@ -46,6 +46,22 @@ t charlength(char name[]){
     return count;
 }
 
+//convert uppercase into lower case
+char converttolower(char ch[100]){
+    for(int i=0;i<strlen(ch);i++){
+        ch[i]=ch[i]+'a'-'A';
+    }
+    cout<<ch;
+}
+
+//convert lower case into uppercase
+char converttoupper(char ch[100]){
+    for(int i=0;i<strlen(ch);i++){
+        ch[i]=ch[i]-'a'+'A';
+    }
+    cout<<ch;
+}
+
 void reversestr(char name[100]){
    int i=0;
    int n=charlength(name);
