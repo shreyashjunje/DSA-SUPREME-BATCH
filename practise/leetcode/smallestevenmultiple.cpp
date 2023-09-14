@@ -46,6 +46,7 @@ t charlength(char name[]){
     return count;
 }
 
+
 //convert uppercase into lower case
 char converttolower(char ch[100]){
     for(int i=0;i<strlen(ch);i++){
