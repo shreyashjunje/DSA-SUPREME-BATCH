@@ -57,6 +57,11 @@ void unionarray(vector<int>crr,vector<int>drr,vector<int>err){
         cout<<err[i]<<" ";
     }
 }
+void reverse(vector<int>brr){
+    for(int i=brr.size();i<0;i--){
+        cout<<brr[i]<<" ";
+    }
+}
 
 
 int main(){
@@ -75,3 +80,4 @@ int main(){
     unionarray(crr,drr,err);
     cout<<endl;
 }
+
