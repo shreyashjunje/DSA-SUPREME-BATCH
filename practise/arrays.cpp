@@ -59,7 +59,7 @@ void unionarray(vector<int>crr,vector<int>drr,vector<int>err){
 }
 void reverse(vector<int>brr){
     for(int i=brr.size();i<0;i--){
-        cout<<brr[i]<<" ";
+        cout<<brr[i]<<" pppp ";
     }
 }
 
