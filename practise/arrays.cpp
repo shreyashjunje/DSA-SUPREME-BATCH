@@ -70,9 +70,11 @@ int main(){
     vector<int>crr{1,2,3,4,5};
     vector<int>drr{5,10,20,30,40,50};
     vector<int>err;
+
     int sum=16;
     sort0n1(arr);
     cout<<endl;
+    
     duplet(brr,sum);
     cout<<endl;
     triplet(brr,sum);
