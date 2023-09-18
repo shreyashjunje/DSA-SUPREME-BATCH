@@ -72,9 +72,10 @@ int main(){
     vector<int>err;
 
     int sum=16;
+    
     sort0n1(arr);
     cout<<endl;
-    
+
     duplet(brr,sum);
     cout<<endl;
     triplet(brr,sum);
