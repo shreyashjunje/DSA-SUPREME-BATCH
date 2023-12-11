@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/shreyash/OneDrive/Documents/Desktop/DSA 2.O/DSA-SUPREME-BATCH",
-      "program": "c:/Users/shreyash/OneDrive/Documents/Desktop/DSA 2.O/DSA-SUPREME-BATCH/build/Debug/outDebug",
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

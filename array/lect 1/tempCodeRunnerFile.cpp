@@ -1,0 +1,1 @@
+countzeroandone(brr,size);
