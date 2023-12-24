@@ -1,40 +1,24 @@
 #include<iostream>
 #include<string.h>
+#include<algorithm>
 using namespace std;
+void replace(char ch[]){
+            int i=0;
 
-int charlength(char name[]){
-    int count=0;
-    int i=0;
-    while(name[i]!='\0'){
-        count++;
-        i++;
+    while(ch[i]!='\0'){
+        if(ch[i]==' '){
+            ch[i]='x';
+            i++;
+        }
     }
-    
-    return count;
-}
-
-void reversestr(char name[100]){
-   int i=0;
-   int n=charlength(name);
-   int j=n-1;
-    while(i<=j){
-        swap(name[i],name[j]);
-        i++;
-        j--;
+    for(int i=0;i<strlen(ch);i++){
+        cout<<ch;
     }
-
-
 }
-
 int main(){
-    char name[100];
-    cin>>name;
+    char ch[100];
+    cin>>ch;
+    replace(ch);
     
-   
-    cout<<"length of the string is "<<charlength(name);
-    cout<<endl;
-    cout<<"reverse of given string is "<<name;
-    cout<<endl;
-    
-
+    return 0;
 }

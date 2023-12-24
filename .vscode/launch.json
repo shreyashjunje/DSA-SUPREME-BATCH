@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "d:/document/Desktop/DSA supreme batch/DSA-SUPREME-BATCH/imp",
+      "program": "d:/document/Desktop/DSA supreme batch/DSA-SUPREME-BATCH/imp/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

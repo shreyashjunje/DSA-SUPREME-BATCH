@@ -1,21 +1,40 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
+#include<climits>
 using namespace std;
 
-int sort(vector<int>num,vector<int>num2;){
-    for(int i-0;i<num.size();i++){
-        if()
+int secondlargest(vector<int>arr){
+    int largest=0;
+    int secondlarge=0;
+    int smallest=INT_MAX;
+    int secondsmall=0;
+    for(int i=0;i<arr.size();i++){
+        if(arr[i]>=largest){
+            secondlarge=largest;
+            largest=arr[i];
+            
+        }
     }
-
+     for(int i=0;i<arr.size();i++){
+        if(arr[i]<smallest){
+           
+            secondsmall=smallest;
+            smallest=arr[i];
+            
+          
+        }else if(secondsmall>arr[i]  && arr[i] != smallest){
+            secondsmall=arr[i];
+        }
+        // cout<<secondsmall;
+    }
+    cout<<"["<<secondlarge<<","<<secondsmall<<"]";
     
-   
 }
 
+
 int main(){
-    vector<int>num{2,0,1};
-    vector<int>num2;
+    vector<int>arr{1,2,4,4,5,4,5,4,4};
+    secondlargest(arr);
     
-     for(int i=0;i<num.size();i++){
-        cout<<num[i]<<" ";
-    }
 }
