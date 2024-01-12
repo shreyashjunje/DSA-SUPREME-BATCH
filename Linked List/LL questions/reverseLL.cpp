@@ -105,7 +105,7 @@ int main(){
     insertNode(30,0,head,tail);
 
     print(head);//
-    cout<<endl;
+    
     head=reverseusingLoop(head);
     print(head);
 
