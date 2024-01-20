@@ -23,9 +23,11 @@ void findMiddle(stack<int>&st,int &size){
     st.pop();
 
 
-    return findMiddle(st,size);
+    findMiddle(st,size);
 
-    // st.push(target);
+    // if you dont want to pop the element from stack
+    
+    st.push(target);
     
 }
 
@@ -44,4 +46,6 @@ int main(){
     
     
     findMiddle(st,size);
+
+    cout<<st.size()<<endl;
 }
