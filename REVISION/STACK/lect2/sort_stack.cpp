@@ -22,6 +22,8 @@ void solve(stack<int>&st, int &target){
 }
 
 
+
+
 void sortStack(stack<int>&st){
     if(st.empty()){
         return;
