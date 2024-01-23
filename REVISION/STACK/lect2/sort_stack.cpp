@@ -19,7 +19,9 @@ void solve(stack<int>&st, int &target){
     solve(st,target);
 
     st.push(temp);
+    
 }
+
 
 
 
