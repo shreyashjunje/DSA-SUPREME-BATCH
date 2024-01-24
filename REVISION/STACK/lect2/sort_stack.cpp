@@ -20,6 +20,7 @@ void solve(stack<int>&st, int &target){
 
     st.push(temp);
     
+    
 }
 
 
