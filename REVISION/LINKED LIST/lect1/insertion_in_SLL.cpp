@@ -113,6 +113,23 @@ void insertAtPosition(int position,int data,Node* &head){
 
 }
 
+Node* reverseSLL(Node* &head){
+    if(head==NULL&& head->next==NULL){
+        return head;
+    }
+
+    Node* temp=reverseSLL(head);
+
+    Node* front=head->next;
+
+    front->next=head;
+
+    head->next=NULL;
+
+    return temp;
+
+}
+
 void print(Node* &head){
     Node* temp=head;
     while(temp!=NULL){
@@ -130,6 +147,8 @@ int main(){
     insertAtTail(head,30);
     insertAtHead(head,40);
 
+    print(head);
+    cout<<reverseSLL(head);
     print(head);
 
     return 0;
