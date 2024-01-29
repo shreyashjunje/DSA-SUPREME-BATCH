@@ -57,6 +57,48 @@ void print(queue<int>&q){
     }
 }
 
+void interleaveQueue(queue<int>&q){
+    int i=1 ;
+    queue<int>Q;
+    int mid=q.size()/2;
+
+
+    while(i<=mid){
+        // cout<<i<<endl;
+        
+        int element=q.front();
+        q.pop();
+        Q.push(element);
+        i++;
+        // cout<<"hi"<<endl;
+
+    }
+
+  
+
+    while(!Q.empty() && !q.empty()){
+       
+        int start=Q.front();
+        
+        Q.pop();
+        q.push(start);
+        
+        int element=q.front();
+        q.pop();
+        q.push(element);
+
+        
+    }
+
+    // note: q.size()%2==1 ki jagah q.size()&1; it will check q is oddor even
+    if(q.size()&1){
+        int element=q.front();
+        q.pop();
+        q.push(element);
+    }
+
+}
+
 
 
 
@@ -67,12 +109,15 @@ int main(){
     q.push(30);
     q.push(40);
     q.push(50);
+    // q.push(60);
+    
 
     // print(q);
     // reverseQueue(q);
 
 
-    reverseByK(q,0);
+    // reverseByK(q,0);
+    interleaveQueue(q);
     print(q);
 
     
