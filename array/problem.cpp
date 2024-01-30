@@ -26,6 +26,7 @@ int main() {
 //printing leader of the array
 
 vector<int>drr{16,17,4,3,5,2};
+
 vector<int>err;
 
 for(int i=0;i<drr.size();i++){
