@@ -21,6 +21,8 @@ int secondlargest(vector<int>arr){
      for(int i=0;i<arr.size();i++){
         if(arr[i]<smallest){
            
+
+           
             secondsmall=smallest;
             smallest=arr[i];
             
