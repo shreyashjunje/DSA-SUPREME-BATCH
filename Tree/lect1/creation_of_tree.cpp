@@ -14,6 +14,7 @@ class Node{
         right=NULL;
     }
     
+    
 };
 
 
