@@ -13,8 +13,8 @@ class Node{
         left=NULL;
         right=NULL;
     }
-    
-    
+
+
 };
 
 
