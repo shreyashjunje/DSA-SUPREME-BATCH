@@ -14,10 +14,7 @@ class Node{
         left=NULL;
         right=NULL;
     }
-
-
 };
-
 Node* BuildTree(){
     int data;
     cout<<"enter the data"<<endl;
