@@ -15,7 +15,6 @@ class Node{
     }
 };
 
-
 Node* BuildTree(){
     int data;
     cout<<"enter the data"<<endl;
@@ -29,7 +28,7 @@ Node* BuildTree(){
     Node* Root = new Node(data);
 
     // step 2: left node by recursion
-    cout<<"enter data for left part "<<data<<" node"<<endl;
+    cout<<"enter data for left part node "<<data<<" node"<<endl;
     Root->left=BuildTree();
 
     // step 3:  right node using recursion 
