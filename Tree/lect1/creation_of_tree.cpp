@@ -2,7 +2,6 @@
 using namespace std;
 
 
-
 class Node{
     public:
     int data;
@@ -38,7 +37,6 @@ Node* BuildTree(){
     return Root;
 
 }
-
 
 int main(){
 
