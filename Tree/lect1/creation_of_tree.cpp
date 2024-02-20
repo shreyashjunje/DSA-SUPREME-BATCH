@@ -12,22 +12,21 @@ class Node{
         left=NULL;
         right=NULL;
     }
+    
 };
-
 Node* BuildTree(){
     int data;
-    cout<<"enter the data"<<endl;
+    cout<<"enter the ata"<<endl;
     cin>>data;
 
     if(data==-1){
         return NULL;
     }
-
     //step 1:  create a root node;
     Node* Root = new Node(data);
 
     // step 2: left node by recursion
-    cout<<"enter data for left part node "<<data<<" node"<<endl;
+    cout<<"enter data for left part node"<<data<<" node"<<endl;
     Root->left=BuildTree();
 
     // step 3:  right node using recursion 
