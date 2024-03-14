@@ -21,7 +21,7 @@ class Node{
     }
     
     ~Node(){
-        cout<<"destructor"<<endl;
+        cout<<"destructer is calls"<<endl;
     }
 
 };
@@ -33,7 +33,6 @@ void print(Node* head){
         temp=temp->next;
     }
 }
-
 int  getlength(Node* head){
     int length=0;
     Node*temp=head;
@@ -44,7 +43,6 @@ int  getlength(Node* head){
     return length;
 
 }
-
 void insertAtHead(Node* &head,Node* &tail, int data){
     //ll empty ho to 
     if(head==NULL){
