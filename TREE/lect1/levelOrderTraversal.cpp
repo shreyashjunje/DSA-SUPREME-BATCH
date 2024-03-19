@@ -57,7 +57,6 @@ void levelOrderTraversal(Node* root){
         if(temp->right){
             Q.push(temp->right);
         }
-
         
     }
     
