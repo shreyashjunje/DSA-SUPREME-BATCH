@@ -59,15 +59,11 @@ void levelOrderTraversal(Node* root){
         }
     }
 }
-
 void DifflevelOrderTraversal(Node* root){
     queue<Node*>Q;
     
     Q.push(root);
     Q.push(NULL);
-    
-    
-    
     while(!Q.empty()){
         Node* temp=Q.front();
         
