@@ -59,7 +59,6 @@ void levelOrderTraversal(Node* root){
         }
     }
 }
-
 void DifflevelOrderTraversal(Node* root){
     queue<Node*>Q;
     
@@ -85,13 +84,8 @@ void DifflevelOrderTraversal(Node* root){
                 if(temp->right){
                     Q.push(temp->right);
                 }
-
         }
-        
-       
-        
     }
-    
 }
 
 int main()
@@ -105,7 +99,7 @@ int main()
 
     cout<<endl;
 
-     cout<<"printing level order traversal on diff row of binary tree : "<<endl;
+    cout<<"printing level order traversal on diff row of binary tree : "<<endl;
     DifflevelOrderTraversal(root);
 
 }
