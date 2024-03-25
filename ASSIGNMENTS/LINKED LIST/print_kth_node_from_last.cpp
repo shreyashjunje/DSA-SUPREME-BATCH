@@ -35,19 +35,17 @@ int getlength(Node* head){
 }
 
 
-void printKthNodefromlast(Node* &head,int k){
-    int length=getlength(head);
-    int printNode=length-k-1;
-
-    int i=0;
-    Node* temp=head;
-    while(i!=printNode){
-        temp=temp->next;
-        i++;
-    }
-
-    cout<<temp->data<<endl;;
-}
+// void printKthNodefromlast(Node* &head,int k){
+//     int length=getlength(head);
+//     int printNode=length-k-1;
+//     int i=0;
+//     Node* temp=head;
+//     while(i!=printNode){
+//         temp=temp->next;
+//         i++;
+//     }
+//     cout<<temp->data<<endl;;
+// }
 
 void solve(Node* &head,int &k,int &ans){
     if(head==NULL){
