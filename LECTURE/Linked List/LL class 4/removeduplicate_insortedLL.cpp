@@ -10,7 +10,7 @@ class Node{
         this->data=data;
         this->next=NULL;
     }
-};
+}
 
 Node* findMiddle(Node* &head){
     if(head==NULL){
