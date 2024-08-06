@@ -111,11 +111,11 @@ int findminIterative(Node* root){
     if(temp==NULL){
         return -1;
     }
-    while(root->left!=NULL){
-        root=root->left;
+    while(temp->left!=NULL){
+        temp=temp->left;
     }
 
-    return root->data;
+    return temp->data;
 
 }
 
@@ -126,11 +126,11 @@ int findmaxIterative(Node* root){
     if(temp==NULL){
         return -1;
     }
-    while(root->right!=NULL){
-        root=root->right;
+    while(temp->right!=NULL){
+        temp=temp->right;
     }
 
-    return root->data;
+    return temp->data;
 
 }
 int main(){
