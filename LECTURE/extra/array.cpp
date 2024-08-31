@@ -3,38 +3,38 @@
 using namespace std;
 
 
-// bool findkey(int drr[],int size, int key){
-//    for(int i=0;i<size;i++){
-//         if(drr[i]==key){
-//             return true;
-//         }
+bool findkey(int drr[],int size, int key){
+   for(int i=0;i<size;i++){
+        if(drr[i]==key){
+            return true;
+        }
         
-//    }
-//    return false;
-// }
-// int numone=0;
-//     int numzero=0;
-// int findone(int err[],int size){
-//     for(int i=0;i<size;i++){
-//         if(err[i]==1){
-//             numone++;
-//         }
+   }
+   return false;
+}
+int numone=0;
+    int numzero=0;
+int findone(int err[],int size){
+    for(int i=0;i<size;i++){
+        if(err[i]==1){
+            numone++;
+        }
         
-//     }
-//     cout<<numone;
+    }
+    cout<<numone;
     
 
-// }
-// int findzero(int err[],int size){
-//     for(int i=0;i<size;i++){
-//         if(err[i]==0){
-//             numzero++;
-//         }
+}
+int findzero(int err[],int size){
+    for(int i=0;i<size;i++){
+        if(err[i]==0){
+            numzero++;
+        }
     
-//     }
-//    cout<<numzero;
+    }
+   cout<<numzero;
     
-// }
+}
 
 int main(){
 
