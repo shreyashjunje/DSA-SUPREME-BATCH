@@ -1,100 +1,100 @@
-// #include<iostream>
-// #include<limits.h>
-// using namespace std;
+#include<iostream>
+#include<limits.h>
+using namespace std;
 
 
-// bool findkey(int drr[],int size, int key){
-//    for(int i=0;i<size;i++){
-//         if(drr[i]==key){
-//             return true;
-//         }
+bool findkey(int drr[],int size, int key){
+   for(int i=0;i<size;i++){
+        if(drr[i]==key){
+            return true;
+        }
         
-//    }
-//    return false;
-// }
-// int numone=0;
-//     int numzero=0;
-// int findone(int err[],int size){
-//     for(int i=0;i<size;i++){
-//         if(err[i]==1){
-//             numone++;
-//         }
+   }
+   return false;
+}
+int numone=0;
+    int numzero=0;
+int findone(int err[],int size){
+    for(int i=0;i<size;i++){
+        if(err[i]==1){
+            numone++;
+        }
         
-//     }
-//     cout<<numone;
+    }
+    cout<<numone;
     
 
-// }
-// int findzero(int err[],int size){
-//     for(int i=0;i<size;i++){
-//         if(err[i]==0){
-//             numzero++;
-//         }
+}
+int findzero(int err[],int size){
+    for(int i=0;i<size;i++){
+        if(err[i]==0){
+            numzero++;
+        }
     
-//     }
-//    cout<<numzero;
+    }
+   cout<<numzero;
     
-// }
+}
 
-// int main(){
+int main(){
 
-//     int frr[]={2,4,5,8,75,42,5,45,78,100};
-//     int size=10;
-//     // int maxNum=INT_MIN;
-//     // int minNum=INT_MAX;
+    int frr[]={2,4,5,8,75,42,5,45,78,100};
+    int size=10;
+    // int maxNum=INT_MIN;
+    // int minNum=INT_MAX;
 
-//     int start=0;
-//     int end=size-1;
+    int start=0;
+    int end=size-1;
 
-//     int offset=-1;
+    int offset=-1;
    
 
 
-//     for(int i=0;i<size;i++){
-//         if(frr[i]>=maxNum){
-//           maxNum=frr[i];
-//         }
-//     }
-//     for(int i=0;i<size;i++){
-//         if(frr[i]<=minNum){
-//           minNum=frr[i];
-//         }
-//     }
-//     cout<<"maximum no. in an array is : ";
-//     cout<<maxNum;
-//     cout<<endl;
-//     cout<<"minimum no. in an array is : ";
-//     cout<<minNum;
+    for(int i=0;i<size;i++){
+        if(frr[i]>=maxNum){
+          maxNum=frr[i];
+        }
+    }
+    for(int i=0;i<size;i++){
+        if(frr[i]<=minNum){
+          minNum=frr[i];
+        }
+    }
+    cout<<"maximum no. in an array is : ";
+    cout<<maxNum;
+    cout<<endl;
+    cout<<"minimum no. in an array is : ";
+    cout<<minNum;
 
-//     printing extreme of array
-//    while(start<=end){
-//     if(start==end){
-//         cout<<frr[start]<<" ";
-//         }
-//         else{
-//             cout<<frr[start]<<" ";
-//             cout<<frr[end]<<" ";
-//         }
-//     start++;
-//     end--;
-//    }
+    printing extreme of array
+   while(start<=end){
+    if(start==end){
+        cout<<frr[start]<<" ";
+        }
+        else{
+            cout<<frr[start]<<" ";
+            cout<<frr[end]<<" ";
+        }
+    start++;
+    end--;
+   }
 
-//     //printing reverse of array
-//     while(start<=end){
+    //printing reverse of array
+    while(start<=end){
      
-//         if(start==end){
+        if(start==end){
             
-//             frr[start]=frr[end];
-//         }
-//         else{
-//             frr[start]=frr[end];
-//         }
-//         start++;
-//         end--;
-//     }
-//     for(int i=0;i<size;i++){
-//         cout<<frr[i]<<" ";
-//     }
+            frr[start]=frr[end];
+        }
+        else{
+            frr[start]=frr[end];
+        }
+        start++;
+        end--;
+    }
+    for(int i=0;i<size;i++){
+        cout<<frr[i]<<" ";
+    }
 
 
 
