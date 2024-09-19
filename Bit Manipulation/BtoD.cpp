@@ -3,20 +3,20 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void convertToBinary(int& num,string &ans){
-    if(num==1 || num==0){
-        if(num==1){
-            ans=to_string(num)+ans;
-        }
-        return;
-    }
+// void convertToBinary(int& num,string &ans){
+//     if(num==1 || num==0){
+//         if(num==1){
+//             ans=to_string(num)+ans;
+//         }
+//         return;
+//     }
     
-    ans=to_string(num%2)+ans;
-    num=num/2;
+//     ans=to_string(num%2)+ans;
+//     num=num/2;
     
-    convertToBinary(num,ans);
+//     convertToBinary(num,ans);
     
-}
+// }
 
 // int convertBinaryToInteger(string B){
 //     reverse(B.begin(),B.end());
