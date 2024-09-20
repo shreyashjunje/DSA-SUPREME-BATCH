@@ -3,33 +3,33 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// void convertToBinary(int& num,string &ans){
-//     if(num==1 || num==0){
-//         if(num==1){
-//             ans=to_string(num)+ans;
-//         }
-//         return;
-//     }
+void convertToBinary(int& num,string &ans){
+    if(num==1 || num==0){
+        if(num==1){
+            ans=to_string(num)+ans;
+        }
+        return;
+    }
     
-//     ans=to_string(num%2)+ans;
-//     num=num/2;
+    ans=to_string(num%2)+ans;
+    num=num/2;
     
-//     convertToBinary(num,ans);
+    convertToBinary(num,ans);
     
-// }
+}
 
-// int convertBinaryToInteger(string B){
-//     reverse(B.begin(),B.end());
-//     int n=B.length();
-//     int integer=0;
-//     for(int i=n-1;i>=0;i--){
-//         int num=B[i]-'0';
-//         integer=integer+num*pow(2,i);
+int convertBinaryToInteger(string B){
+    reverse(B.begin(),B.end());
+    int n=B.length();
+    int integer=0;
+    for(int i=n-1;i>=0;i--){
+        int num=B[i]-'0';
+        integer=integer+num*pow(2,i);
         
-//     }
+    }
     
-//     return integer;
-// }
+    return integer;
+}
 
 
 int main() {
