@@ -77,22 +77,22 @@ public:
     int rob(vector<int>& nums) {
         // Recursive code
 
-        int n = nums.size() - 1;    
-        int ans = solveRec(nums,n);
-        return ans;
+        // int n = nums.size() - 1;    
+        // int ans = solveRec(nums,n);
+        // return ans;
 
-        Top down approach
-        Step 1 : Create dp array
-        int n = nums.size() - 1;
-        vector<int>dp(n+1,-1);
-        int ans = solveTopDown(nums,n,dp);
-        return ans;
+        // Top down approach
+        // Step 1 : Create dp array
+        // int n = nums.size() - 1;
+        // vector<int>dp(n+1,-1);
+        // int ans = solveTopDown(nums,n,dp);
+        // return ans;
 
-        Bottom up approach
-        int n = nums.size() - 1;
-        return solveTab(nums,n);
+        // Bottom up approach
+        // int n = nums.size() - 1;
+        // return solveTab(nums,n);
 
-        Space optimization
+        // Space optimization
         int n = nums.size() - 1;
         return spaceOpt(nums,n);
     }
