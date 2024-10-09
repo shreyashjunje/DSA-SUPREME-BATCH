@@ -84,24 +84,24 @@ int coinChange(vector<int> &coins, int amount)
     // Recursive code
 
 
-    // int ans = solveRec(coins, amount);
-    // if (ans == INT_MAX)
-    // {
-    //     // Directed by question
-    //     return -1;
-    // }
-    // return ans;
+    int ans = solveRec(coins, amount);
+    if (ans == INT_MAX)
+    {
+        // Directed by question
+        return -1;
+    }
+    return ans;
 
 
-    // Top down approach
+    Top down approach
 
 
-    // Step 1 : Create dp array
-    // vector<int>dp(amount+1,-1);
-    // int ans = solveTopDown(coins,amount,dp);
-    // if(ans == INT_MAX) 
-    //     return -1;
-    // return ans;
+    Step 1 : Create dp array
+    vector<int>dp(amount+1,-1);
+    int ans = solveTopDown(coins,amount,dp);
+    if(ans == INT_MAX) 
+        return -1;
+    return ans;
 
 
     // Bottom up approach
